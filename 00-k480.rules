@@ -1,2 +1,1 @@
-SUBSYSTEM=="hidraw", ACTION=="add", SUBSYSTEMS=="bluetooth", ATTRS{address}=="34:88:5D:65:7B:B2", \
-  RUN+="/opt/bin/k480_conf -d /dev/%k -f on"
+KERNEL=="hidraw2", SUBSYSTEM=="hidraw", ACTION=="add", RUN+="/opt/bin/k480_conf -d /dev/hidraw2 -f on"
