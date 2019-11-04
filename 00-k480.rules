@@ -1,1 +1,1 @@
-KERNEL=="hidraw2", SUBSYSTEM=="hidraw", ACTION=="add", RUN+="/opt/bin/k480_conf -d /dev/hidraw2 -f on"
+SUBSYSTEM=="hidraw", ACTION=="add", RUN+="/opt/bin/k480.sh"
